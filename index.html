@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 10px;;
+            padding: 0;
+        }
+        .container{
+            /* width: 100%; */
+            /* /height:auto; */
+        }
+        .container img{
+           width: 1250px;
+           height: 800px;
+           background-image: cover;
+           background-position: center;
+        }
+        .card1, .card2, .card3, .card4{
+        display: inline-block;
+        background: #fff;
+        border: 1px solid #050404;
+        border-radius: 8px;
+        /* animation: example 4s infinite ease-in-out; */
+        width: 250px;
+        margin: 5px;
+        margin-left: 20px;
+        text-align: center;
+        padding: 1rem;
+        box-shadow: 0 0 80px rgba(243, 243, 243, 0.589); 
+        }
+        .card1 img, .card2 img, .card3 img , .card4 img {
+        width: 200px;
+        height:200px;
+        border-radius: 8px;
+        
+        margin: 10px;
+        }
+        .mybutton {
+        background-color: #00c3ff;
+        color: white;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        font-size: 0.9rem;
+        cursor: pointer;
+        transition: background-color 0.1s;
+        }
+        @media (max-width: 600px) {
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card1, .card2, .card3, .card4 {
+        width: 100%; 
+        /* margin: 0px 0; */
+    }
+}
+
+
+ 
+ @media (max-width: 600px) {
+            .cards {
+                flex-direction: column;
+                align-items: center;
+            }
+            .card1, .card2, .card3, .card4 {
+                width: 90%; 
+                margin: 40px;
+                align-items: center;
+            }
+        }
+
+       
+        @media (min-width: 601px) and (max-width: 900px) {
+            .cards {
+                display: grid;
+                
+                grid-template-columns: repeat(4, 1fr); 
+                gap: 20px;
+            }
+            .card1, .card2, .card3, .card4 {
+                width: 100%;
+                
+            }
+        }
+
+       
+         @media (min-width: 901px) {
+            .cards {
+                justify-content: center;
+            }
+            .card1, .card2, .card3, .card4 {
+                width: 250px; 
+            }
+        } 
+    </style>
+</head>
+<body>
+<div class="container">
+    <img src="https://images.unsplash.com/photo-1697530152990-2c47d3cf7d7a?q=80&w=1512&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="photo">
+</div>
+<div class="cards">
+    -- <div class="card1"> 
+         <img src="project.png" alt="project">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed iusto alias atque vel a laudantium sunt commodi sequi eius. Natus reprehenderit pariatur ex nihil blanditiis officia quas fugit laborum accusantium?</p>
+            <button onclick="window.location.href='https://github.com/ChikaneSonal'" class="mybutton">View Poject</button>
+
+        </div>
+        <div class="card2">
+            <img src="project.png" alt="project">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed iusto alias atque vel a laudantium sunt commodi sequi eius. Natus reprehenderit pariatur ex nihil blanditiis officia quas fugit laborum accusantium?</p>
+            <button onclick="window.location.href='https://github.com/ChikaneSonal'" class="mybutton">View Poject</button>
+
+        </div>
+    
+           
+        <!-- <div class="phone1"> -->
+        <div class="card3">
+            <img src="project.png" alt="project">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed iusto alias atque vel a laudantium sunt commodi sequi eius. Natus reprehenderit pariatur ex nihil blanditiis officia quas fugit laborum accusantium?</p>
+            <button onclick="window.location.href='https://github.com/ChikaneSonal'" class="mybutton">View Poject</button>
+
+        </div>
+        <div class="card4">
+            <img src="project.png" alt="project">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed iusto alias atque vel a laudantium sunt commodi sequi eius. Natus reprehenderit pariatur ex nihil blanditiis officia quas fugit laborum accusantium?</p>
+            <button onclick="window.location.href='https://github.com/ChikaneSonal'" class="mybutton">View Poject</button>
+
+        </div>
+    </div>
+        
+
+</div>
+
+</body>
+</html>
